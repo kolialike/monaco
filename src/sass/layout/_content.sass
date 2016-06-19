@@ -73,25 +73,47 @@
 	.content-left
 		width: 580/1180*100%
 		float: left
+		+breakpoint(1200px)
+			float: none
+			width: 100%
+			margin-top: 40px
 		img 
 			max-width: 100%
 			display: block
 			position: absolute
 			top: 48px
 			left: -206px
+			+breakpoint(1200px)
+				position: relative
+				top: 0
+				left: -27px
+				display: block
+				margin: auto
 	.content-right
 		width: 600/1180*100%
 		color: #fff 
 		float: right
 		margin-top: 93px
+		+breakpoint(1400px)
+			padding-bottom: 404px
+		+breakpoint(1200px)
+			display: block
+			float: none 
+			width: 100%
+			margin-top: 20px
 		h4 
 			font-size: 36px
 			line-height: 38px
 			margin-bottom: 39px
+			+breakpoint(1200px)
+				margin-bottom: 10px
+				font-size: 28px
 		p
 			font-size: 18px
 			letter-spacing: 1px
 			line-height: 22px	
+			+breakpoint(1023px)
+				font-size: 15px
 
 .corporate-colors
 	// background: image-url("book.png") left 15px no-repeat
